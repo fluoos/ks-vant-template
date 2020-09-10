@@ -1,6 +1,6 @@
-# ks-h5-template
+# ks-vant-template
 ```
-ks-cli的h5模板,包括：
+ks-cli的h5-vant模板,包括：
 Babel
 dart-sass
 Typescript
