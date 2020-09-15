@@ -39,13 +39,13 @@ module.exports = {
   },
   devServer: {
     proxy: {
-      '/api': {
+      '/test': {
         target: 'http://192.168.3.121:5001', // 要访问的跨域的域名
         ws: true,
         secure: false, // 使用的是http协议则设置为false，https协议则设置为true
         changOrigin: true,
         pathRewrite: {
-          '^/api': ''
+          '^/test': ''
         }
       }
     }
