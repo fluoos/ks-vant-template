@@ -1,4 +1,5 @@
 import Vue, { VNode } from 'vue'
+import { AxiosInstance } from 'axios'
 
 declare global {
   namespace JSX {
@@ -9,5 +10,11 @@ declare global {
     interface IntrinsicElements {
       [elem: string]: any;
     }
+  }
+}
+
+declare module 'vue/types/vue' {
+  interface Vue {
+    $axios: AxiosInstance;
   }
 }
